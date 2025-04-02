@@ -4,7 +4,11 @@
 
 <hr>
 
-
+<form>
+  <input name = "zebra[giraffe]">
+  <input name = "zebra[elephant]">
+  <button>Submit</button>
+</form>
 
 
 <div>
@@ -39,7 +43,7 @@
     </th>
   </tr>
 
-  <% @list_of_movies.each do |a_movie| %>
+  <% @movies.each do |a_movie| %>
   <tr>
     <td>
       <%= a_movie.id %>
